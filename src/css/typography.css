@@ -1,0 +1,47 @@
+body {
+    font-size: 13px;
+    line-height: 1.3;
+    font-family: var(--ss-stack);
+    color: var(--text-color);
+}
+/* Liens */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3em;
+    font-family: var(--ss-stack);
+    margin: 0 0 .8em;
+}
+h1 {
+    font-size: 2em;
+    &.title { margin: .6em 0; }
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+p {
+    word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    font-feature-settings: "liga", "dlig", "kern" true;
+}
+
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}

@@ -1,0 +1,75 @@
+body { margin: 0; }
+img { height: auto;max-width: 100%; }
+
+/* List styles */
+ul, ol {
+    margin-left: 0;
+}
+ul {
+    list-style: none;
+}
+ol { list-style-type: decimal;
+    ol { list-style-type: lower-alpha;
+        ol { list-style-type: decimal;
+        }
+    }
+}
+/* Abbreviation */
+abbr {
+    border-bottom: 1px dotted #666666;
+    cursor: help;
+    white-space: nowrap;
+}
+/* Citation */
+blockquote {
+    padding: 1.6em 1.8em;
+    margin: .6em 0;
+    p {
+        margin: 0;
+    }
+    footer {
+    }
+    cite {
+    }
+}
+/* Divers */
+sup,sub {
+    font-size: .7em;
+    position: relative;
+}
+sup { bottom: .6em; }
+sub { top: .2em; }
+small { font-size: .75em; }
+acronym {
+    text-decoration: dotted;
+    cursor: help;
+    border-bottom: 1px dotted;
+    border-bottom-color: inherit;
+}
+/* Code */
+pre, code, tt {
+    white-space: normal;
+    background: none;
+    border: none;
+    margin: .5em 0;
+}
+/* Tableaux */
+table {
+    width: 100%;
+    thead {
+        tr:nth-child(n+2) {
+        }
+        th {
+        }
+    }
+    td,th {
+        word-wrap: break-word;
+    }
+    tbody {
+        tr {
+            &:nth-child(odd) { background: #eee; }
+        }
+        td {
+        }
+    }
+}
