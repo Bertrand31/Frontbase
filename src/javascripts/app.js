@@ -10,7 +10,6 @@ function updateViewportDimensions() {
 }
 const viewport = updateViewportDimensions();
 
-const $ = require('jquery');
 const slick = require('slick-carousel');
 
 require('svgxuse')();

@@ -1,7 +1,7 @@
 {
-  "name": "Bones-CUA",
-  "version": "1.0.0",
-  "description": "Fork du template Wordpress 'Bones' par Bertrand Junqua chez Comme un Arbre !",
+  "name": "Starter-FrontEnd",
+  "version": "0.8.0",
+  "description": "Front-end template written by Bertrand Junqua",
   "main": "index.js",
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
@@ -34,6 +34,7 @@
     "postcss-reporter": "^1.3.3",
     "postcss-url": "^5.1.2",
     "stylelint": "^6.5.1",
+    "svgxuse": "^1.1.17",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
@@ -42,27 +43,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:commeunarbre/bones-cua.git"
+    "url": "git@github.com:Bertrand31/Frontbase.git"
   },
   "keywords": [
-    "Drupal",
-    "Basic",
     "Gulp",
     "NodeJS",
-    "NPM",
-    "SASS",
-    "Bourbon",
-    "Neat"
+    "PostCSS",
+    "cssnext",
+    "Browserify",
+    "Babel"
   ],
   "author": "Bertrand Junqua",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://bitbucket.org/commeunarbre/bones-cua/issues/"
+    "url": "https://github.com/Bertrand31/Frontbase/issues"
   },
-  "homepage": "https://bitbucket.org/commeunarbre/bones-cua/",
-  "dependencies": {
-    "jquery": "^2.2.4",
-    "slick-carousel": "^1.6.0",
-    "svgxuse": "^1.1.17"
-  }
+  "homepage": "https://github.com/Bertrand31/Frontbase"
 }
