@@ -13,6 +13,7 @@
         "svgDest": "built/img/",
 
         "jsSrc": "src/javascripts/app.js",
+        "jsAll": "src/javascripts/**/*.js",
         "jsDest": "built/js/"
     }
 }

@@ -6,8 +6,6 @@ const sourcemaps = require('gulp-sourcemaps');
 
 // JS
 const uglify     = require('gulp-uglify');
-
-// BROWSERIFY
 const browserify = require('browserify');
 const source     = require('vinyl-source-stream');
 const buffer     = require('vinyl-buffer');
@@ -23,6 +21,10 @@ module.exports = () => {
     return bundler
         .transform(babelify, { presets: ['es2015', 'react'] })
         .bundle()
+        .on('error', function(err){
+            console.log(err.stack);
+            console.log('Compiler Error: ' + err.message);
+        })
         .pipe(source('app.bundle.js'))
         .pipe(buffer())
         .pipe(isDev ? sourcemaps.init({ loadMaps: true }) : uglify())

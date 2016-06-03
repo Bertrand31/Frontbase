@@ -13,7 +13,7 @@ const gulp = require('./gulp')([
 gulp.task('default', () => {
     isDev && livereload.listen();
     gulp.watch(config.paths.cssAll, ['css']);
-    gulp.watch(config.paths.jsSrc, ['jsFrontLint', 'jsFrontBundle']);
+    gulp.watch(config.paths.jsAll, ['jsFrontLint', 'jsFrontBundle']);
     gulp.watch(config.paths.bmpSrc, ['imagesBitmap']);
     gulp.watch(config.paths.svgSrc, ['imagesSVG']);
 });
