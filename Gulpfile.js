@@ -1,19 +1,20 @@
 const config     = require('./.gulprc.json');
-const isDev      = config.env === 'dev';
 const livereload = require('gulp-livereload');
 
 const gulp = require('./gulp')([
     'css',
     'jsFrontBundle',
     'jsFrontLint',
+    'jsFrontTest',
     'imagesBitmap',
     'imagesSVG',
 ]);
 
 gulp.task('default', () => {
-    isDev && livereload.listen();
+    livereload.listen();
     gulp.watch(config.paths.cssAll, ['css']);
-    gulp.watch(config.paths.jsAll, ['jsFrontLint', 'jsFrontBundle']);
+    gulp.watch(config.paths.jsAll, ['jsFrontLint', 'jsFrontBundle', 'jsFrontTest']);
+    gulp.watch(config.paths.jsTest, ['jsFrontTest']);
     gulp.watch(config.paths.bmpSrc, ['imagesBitmap']);
     gulp.watch(config.paths.svgSrc, ['imagesSVG']);
 });

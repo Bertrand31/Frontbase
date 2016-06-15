@@ -14,6 +14,7 @@
 
         "jsSrc": "src/javascripts/app.js",
         "jsAll": "src/javascripts/**/*.js",
+        "jsTest": "test/*.js",
         "jsDest": "built/js/"
     }
 }
