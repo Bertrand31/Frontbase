@@ -23,7 +23,7 @@ module.exports = () => {
         .bundle()
         .on('error', function(err){
             console.log(err.stack);
-            console.log('Compiler Error: ' + err.message);
+            console.log(`Compiler Error:  ${err.message}`);
         })
         .pipe(source('app.bundle.js'))
         .pipe(buffer())
