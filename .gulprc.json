@@ -1,16 +1,13 @@
 {
     "paths": {
-        "cssSrc": "src/css/style.css",
-        "cssAll": "src/css/*.css",
-        "cssDest": "built/",
+        "cssassets": "assets/css/style.css",
+        "cssAll": "assets/css/*.css",
+        "cssDest": "public/css/",
 
-        "bmpSrc": "src/images/BMP/**/*.{jpg,gif,png}",
-        "bmpDest": "built/img/",
+        "bmpassets": "assets/images/BMP/**/*.{jpg,gif,png}",
+        "bmpDest": "public/img/",
 
-        "svgSrc": "src/images/SVG/**/*.svg",
-        "svgDest": "built/img/",
-
-        "jsAll": ["src/javascripts/**/*.js", "test/*.js"],
-        "jsTest": "test/*.js"
+        "svgassets": "assets/images/SVG/**/*.svg",
+        "svgDest": "public/img/"
     }
 }

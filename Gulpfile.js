@@ -3,15 +3,13 @@ const livereload = require('gulp-livereload');
 
 const gulp = require('./gulp')([
     'css',
-    'jsFrontTest',
-    'imagesBitmap',
+    'imagesBMP',
     'imagesSVG',
 ]);
 
 gulp.task('default', () => {
     livereload.listen();
     gulp.watch(config.paths.cssAll, ['css']);
-    gulp.watch(config.paths.jsAll, ['jsFrontTest']);
-    gulp.watch(config.paths.bmpSrc, ['imagesBitmap']);
+    gulp.watch(config.paths.bmpSrc, ['imagesBMP']);
     gulp.watch(config.paths.svgSrc, ['imagesSVG']);
 });

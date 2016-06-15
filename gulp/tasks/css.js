@@ -18,9 +18,7 @@ module.exports = () => {
     const processors = [
         cssimport(),
         url(),
-        cssnext({
-            browsers: ['> 5%', 'last 2 versions', 'ie > 10']
-        }),
+        cssnext({ browsers: ['> 5%', 'last 2 versions', 'ie > 10'] }),
         assets({ loadPaths: [config.paths.bmpDest, config.paths.svgDest] }),
         stylelint(),
         // cssnano(),

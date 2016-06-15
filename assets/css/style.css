@@ -26,5 +26,3 @@
 @import 'layout/768' (min-width: 768px);
 @import 'layout/1030' (min-width: 1030px);
 @import 'layout/1240' (min-width: 1240px);
-
-@import 'print' (print);

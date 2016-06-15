@@ -3,10 +3,8 @@ const webpack = require('webpack');
 module.exports = {
     context: __dirname,
 
-    entry: ['whatwg-fetch', 'babel-polyfill', './src/javascripts/app.js'],
-
-    devtool: 'source-map',
-
+    entry: ['whatwg-fetch', 'babel-polyfill', './assets/js/app.js'],
+    // devtool: 'source-map',
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
