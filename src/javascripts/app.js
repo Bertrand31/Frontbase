@@ -2,8 +2,7 @@ require('svgxuse')();
 
 const util = require('./utilities');
 
-let viewport = util.updateViewportDimensions(window, document);
-
 document.addEventListener('DOMContentLoaded', () => {
+    const viewport = util.updateViewportDimensions(window, document);
     console.log(viewport);
 });
