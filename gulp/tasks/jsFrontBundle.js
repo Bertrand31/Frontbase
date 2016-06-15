@@ -1,14 +1,13 @@
 // MISC
 const gulp       = require('gulp');
 const config     = require('../../.gulprc.json');
-const isDev      = config.env === 'dev';
+const buffer     = require('vinyl-buffer');
+const source     = require('vinyl-source-stream');
 const sourcemaps = require('gulp-sourcemaps');
 
 // JS
 const uglify     = require('gulp-uglify');
 const browserify = require('browserify');
-const source     = require('vinyl-source-stream');
-const buffer     = require('vinyl-buffer');
 
 // BABEL
 const babelify = require('babelify');
@@ -27,6 +26,7 @@ module.exports = () => {
         })
         .pipe(source('app.bundle.js'))
         .pipe(buffer())
-        .pipe(isDev ? sourcemaps.init({ loadMaps: true }) : uglify())
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        // .pipe(uglify())
         .pipe(gulp.dest(config.paths.jsDest));
 };

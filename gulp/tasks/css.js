@@ -1,7 +1,6 @@
 // MISC
 const gulp       = require('gulp');
 const config     = require('../../.gulprc.json');
-const isDev      = config.env === 'dev';
 const sourcemaps = require('gulp-sourcemaps');
 const livereload = require('gulp-livereload');
 
@@ -28,10 +27,10 @@ module.exports = () => {
         reporter({ clearMessages: true })
     ];
     return gulp.src(config.paths.cssSrc)
-        .pipe(isDev && sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(postcss(processors))
-        .pipe(isDev && sourcemaps.write())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.paths.cssDest))
-        .pipe(isDev && livereload());
+        .pipe(livereload());
 };
 

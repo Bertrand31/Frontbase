@@ -1,6 +1,4 @@
 {
-    "env": "dev",
-
     "paths": {
         "cssSrc": "src/css/style.css",
         "cssAll": "src/css/*.css",
