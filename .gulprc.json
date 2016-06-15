@@ -10,9 +10,7 @@
         "svgSrc": "src/images/SVG/**/*.svg",
         "svgDest": "built/img/",
 
-        "jsSrc": "src/javascripts/app.js",
-        "jsAll": "src/javascripts/**/*.js",
-        "jsTest": "test/*.js",
-        "jsDest": "built/js/"
+        "jsAll": ["src/javascripts/**/*.js", "test/*.js"],
+        "jsTest": "test/*.js"
     }
 }

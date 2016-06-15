@@ -11,7 +11,7 @@ module.exports = {
 
         return {
             width: win.innerWidth || docE.clientWidth || body.clientWidth,
-            height: win.innerHeight || docE.clientHeight || body.clientHeight
+            height: win.innerHeight || docE.clientHeight || body.clientHeight,
         };
-    }
-}
+    },
+};
