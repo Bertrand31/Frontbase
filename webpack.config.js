@@ -10,8 +10,9 @@ module.exports = {
     },
 
     output: {
-        path: 'built/js/',
+        path: './public/js/',
         filename: 'bundle.js',
+        chunkFilename: '[hash].bundle.js',
         // publicPath: '/js/'
     },
 

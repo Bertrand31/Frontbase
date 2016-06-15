@@ -1,11 +1,5 @@
 ############
-## Bones
-############
-
-Bones.esproj/
-
-############
-## IDEs
+## VIM
 ############
 
 *.swp
@@ -17,7 +11,7 @@ $.swo
 
 #Gulp + Gulp output
 node_modules/
-built/
+public/
 
 #Istanbul
 coverage/
@@ -39,7 +33,4 @@ temp/
 ._*
 .Trashes
 
-.svn
-
-*.codekit
 *.scssc
