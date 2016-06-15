@@ -15,9 +15,12 @@ $.swo
 ## Misc
 ############
 
-#Grunt + Grunt output
+#Gulp + Gulp output
 node_modules/
 built/
+
+#Istanbul
+coverage/
 
 #SASS Cache
 .sass-cache
