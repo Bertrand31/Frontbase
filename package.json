@@ -46,8 +46,9 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
-    "dev": "./node_modules/.bin/webpack-dev-server --hot --inline --color --progress",
-    "build": "./node_modules/.bin/webpack --color --progress"
+    "gulp-dev": "./node_modules/.bin/gulp default",
+    "webpack-dev": "./node_modules/.bin/webpack-dev-server --hot --inline --color --progress",
+    "webpack-build": "./node_modules/.bin/webpack --color --progress"
   },
   "repository": {
     "type": "git",
