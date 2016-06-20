@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 
-const util = require('../src/javascripts/utilities');
+const util = require('../assets/js/utilities');
 
 describe('#utilities', function() {
     describe('#updateViewportDimensions()', function() {
